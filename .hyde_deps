@@ -18,6 +18,8 @@
   !!python/unicode 'tagged_posts.j2', !!python/unicode 'analytics.j2']
 !!python/unicode 'blog/tags/thoughts.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
   !!python/unicode 'tagged_posts.j2', !!python/unicode 'analytics.j2']
+!!python/unicode 'cv/index.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
+  !!python/unicode 'analytics.j2']
 !!python/unicode 'index.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
   !!python/unicode 'analytics.j2']
 !!python/unicode 'media/css/site.css': []
