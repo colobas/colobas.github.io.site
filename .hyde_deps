@@ -1,0 +1,29 @@
+!!python/unicode 'about.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
+  !!python/unicode 'analytics.j2']
+!!python/unicode 'blog/angry-post.html': [!!python/unicode 'blog.j2', !!python/unicode 'macros.j2',
+  !!python/unicode 'base.j2', !!python/unicode 'analytics.j2']
+!!python/unicode 'blog/atom.xml': [!!python/unicode 'atom.j2', !!python/unicode 'macros.j2']
+!!python/unicode 'blog/excerpts.xml': [!!python/unicode 'atom.j2', !!python/unicode 'macros.j2']
+!!python/unicode 'blog/happy-post.html': [!!python/unicode 'blog.j2', !!python/unicode 'macros.j2',
+  !!python/unicode 'base.j2', !!python/unicode 'analytics.j2']
+!!python/unicode 'blog/index.html': [!!python/unicode 'listing.j2', !!python/unicode 'macros.j2',
+  !!python/unicode 'base.j2', !!python/unicode 'analytics.j2']
+!!python/unicode 'blog/sad-post.html': [!!python/unicode 'blog.j2', !!python/unicode 'macros.j2',
+  !!python/unicode 'base.j2', !!python/unicode 'analytics.j2']
+!!python/unicode 'blog/tags/angry.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
+  !!python/unicode 'tagged_posts.j2', !!python/unicode 'analytics.j2']
+!!python/unicode 'blog/tags/happy.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
+  !!python/unicode 'tagged_posts.j2', !!python/unicode 'analytics.j2']
+!!python/unicode 'blog/tags/sad.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
+  !!python/unicode 'tagged_posts.j2', !!python/unicode 'analytics.j2']
+!!python/unicode 'blog/tags/thoughts.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
+  !!python/unicode 'tagged_posts.j2', !!python/unicode 'analytics.j2']
+!!python/unicode 'index.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
+  !!python/unicode 'analytics.j2']
+!!python/unicode 'media/css/site.css': []
+!!python/unicode 'media/css/syntax.css': []
+!!python/unicode 'media/js/libs/dd_belatedpng.js': []
+!!python/unicode 'media/js/libs/jquery-1.5.1.min.js': []
+!!python/unicode 'media/js/libs/modernizr-1.7.min.js': []
+!!python/unicode 'portfolio/index.html': [!!python/unicode 'macros.j2', !!python/unicode 'base.j2',
+  !!python/unicode 'analytics.j2']
