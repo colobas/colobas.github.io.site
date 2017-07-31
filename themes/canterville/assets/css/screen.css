@@ -649,8 +649,6 @@ body.nav-opened .nav {
     font-size: 1.2rem;
     vertical-align: bottom;
     color: #B8B8B8;
-    content: counter(item, lower-roman);
-    counter-increment: item;
 }
 .nav li {
     margin: 0;
@@ -775,6 +773,7 @@ body.nav-opened .nav {
     float: left;
     background: none !important;
     border: none !important;
+    color: #9EABB3; !important;
 }
 
 .blog-logo img {
@@ -785,6 +784,27 @@ body.nav-opened .nav {
     height: 38px;
     padding: 1px 0 5px 0;
     width: auto;
+}
+
+.home-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 38px;
+    padding: 0 15px;
+    border: #bfc8cd 1px solid;
+    opacity: 1;
+    color: #9EABB3;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
 }
 
 .menu-button {

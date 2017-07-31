@@ -1,0 +1,28 @@
+## -*- coding: utf-8 -*-
+<%namespace name="helper" file="post_helper.tmpl"/>
+<%namespace name="pheader" file="post_header.tmpl"/>
+<%namespace name="comments" file="comments_helper.tmpl"/>
+<%namespace name="math" file="math_helper.tmpl"/>
+<%inherit file="base.tmpl"/>
+
+<%block name="extra_head">
+    ${parent.extra_head()}
+    ${helper.open_graph_metadata(post)}
+    ${helper.twitter_card_information(post)}
+    ${helper.meta_translations(post)}
+    ${math.math_styles_ifpost(post)}
+</%block>
+
+<%block name="content">
+
+  <article class="post post">
+    <header class="post-header">
+        <h1 class="post-title">${post.title()}</h1>
+    </header>
+
+    <section class="post-content">
+    ${post.text()}
+    </section>
+    <footer class="post-footer">
+</article>
+</%block>
