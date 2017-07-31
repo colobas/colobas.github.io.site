@@ -69,8 +69,6 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/pages/about/", "About"),
         ("/pages/cv/", "Curriculum Vitae"),
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
     ),
 }
 
@@ -122,10 +120,10 @@ POSTS = (
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("pages/*.rst", "pages", "page.tmpl"),
-    ("pages/*.md", "pages", "page.tmpl"),
-    ("pages/*.txt", "pages", "page.tmpl"),
-    ("pages/*.html", "pages", "page.tmpl"),
+    ("pages/*.rst", "pages", "story.tmpl"),
+    ("pages/*.md", "pages", "story.tmpl"),
+    ("pages/*.txt", "pages", "story.tmpl"),
+    ("pages/*.html", "pages", "story.tmpl"),
 )
 
 
@@ -1297,7 +1295,8 @@ GLOBAL_CONTEXT = {
 	'TWITTER_URL': 'https://twitter.com/colobas_',
 	'GITHUB_URL': 'https://github.com/colobas',
 	'BANNER_URL': '/assets/img/silk-road.jpg',
-	'LINKEDIN_URL': 'https://www.linkedin.com/in/guilherme-pires-92717913b/'
+	'LINKEDIN_URL': 'https://www.linkedin.com/in/guilherme-pires-92717913b/',
+	'MEDIUM_URL': 'https://medium.com/@colobas'
 }
 
 # Add functions here and they will be called with template

@@ -49,6 +49,11 @@ ${header.html_navigation_links()}
                 </a>
                 &nbsp;
                 % endif
+                %if MEDIUM_URL:
+                <a class="bloglogo" href=${MEDIUM_URL} target="_blank">
+                   <img class="icon icons8-Medium" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAA2dJREFUaEPtmT1v2kAYx88JRAHxFkLEu6BBQmVJg7K1SKUdYSBdeNmI1KlL0zlD3Q8QUakjQihsbPkGZexG9w5pP0ClrICE+zxWjIxrzmefDYnESVFAvrvn/7vnxY8OgTzxITxx/WQLsGkPbj3wqDzQarU++Hy+l/P5/KrX6/1xUly/3z/f39//5vV6f7lcrotqtWrJ3lIINRoNCUULgiD5/f4RgFw4AQLis2BjDH8htLezsyMFAoGRFRBdAOXknQK5ubm5BRs1rYetgFABnACB0y+D0O+08DQDwgRgFwiIDz2ETpYlv1hATAHwgkDoiLDHZxbx6jk0EEsAWpBut/vWSBQmLgi5M5rHElq1Wm1hjwtAMVYoFD6JoviVZhxOfwTPX/MA4NqjoyNSqVQWuu0CuIe9iwDxW0/gYDBoS5LU5xW/t7dH8vk8OTs7sx0Atd0CwDutyIfEvVNqPg9ENpslwWCQnJ6eOgKA2t4ABIbKYkDoYGh95BGOa6FDILlcTt7GSQAMIQwlDCnCUvNZwHZ3d+XQwRByGgD3/wIAIn6A0/8J/16wiKTNicViJBqNLqY46QHFyLPj4+NzSNwOr3g8dahyS9s4DgAJ+yOTyTy3I3Ex7jH+1cNxADQWiUQIdLRcDgiHwySdTv+3x1oA4K1LUqkUwQS0MnAdho7e+rUAoGjo8cnh4aEV/SSZTMpe1BtrA0DjWEE8Ho8pCHXN3zgAVhE8TTMDaz4Neq0eQOGYjNgCsAxs1hKJBHXq2gEwoVGU2+2mClOaNaPEtx3g5OTk72w2o2Yr3D4svU31SJRmzchTtgMMh0Ph+vr6cjKZiNPpdGWs0BLaKHEdfZEhgGKABgLXJnIoaUNE26xtxANao6tAQqEQOTg4WJqubdYeBQDNI/iGVhJar1l7VAB6IHClSOLxuPxIr1mzDFCv1++hg2Qr2Cor6hwwMq6EFrQZQehYdZs1oz1WViEAEAHA9L2NGQBFXKfTeV8qldoQSq+MBGufrwTAic1mswyXugjCfAViBUARNR6Py/DZlD0qgLKxGRAeACsgTABmQOwAMANiCoAFxE4AFhBLADQQJwBoIFwAahC4dbiE7yMAoN6Lmq0yevMfkr0Nz26LxSL+QCKP7a+Udpwuzx5bD/Ccnh1rtx6w4xR59vgH4594QPlGXRUAAAAASUVORK5CYII="> 
+                </a>
+                % endif
 
                 <h1 class="page-title">${title}</h1>
                 <h2 class="page-description">${description}</h2>
