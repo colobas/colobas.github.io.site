@@ -1,0 +1,53 @@
+https://keybase.io/colobas
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://colobas.github.io
+  * I am colobas (https://keybase.io/colobas) on keybase.
+  * I have a public key ASAaPU8vs9IyD_EeWtb1sO_bhHcZq_n7V2D6H7_x7mbf3Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01018c6bc49ee58fdff4599b87cfd4748af9c47ba088a57f143c4f7df0b0befb058a0a",
+      "host": "keybase.io",
+      "kid": "01201a3d4f2fb3d2320ff11e5ad6f5b0efdb847719abf9fb5760fa1fbff1ee66dfdd0a",
+      "uid": "fbf3a5cb019fc86bef6be647a3f36e19",
+      "username": "colobas"
+    },
+    "merkle_root": {
+      "ctime": 1502888316,
+      "hash": "1d0ab0a99a72ba31cd0e905b7a958453b4e13d00179ce805afe463a37173247dbde696de7cfada94caa636b693f627eeaa06c8ac461983b5f77822c6d8519706",
+      "hash_meta": "b1c3fb75f61329d46fbf948fba043337f401836604e6dd2eac5c1146f1d33123",
+      "seqno": 1329360
+    },
+    "service": {
+      "hostname": "colobas.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.28"
+  },
+  "ctime": 1502888224,
+  "expire_in": 504576000,
+  "prev": "b8cd06cf72a09f667ae8dff38e2f137dafca0ca0ae8aae0c85b7942e99f7832b",
+  "seqno": 23,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgGj1PL7PSMg/xHlrW9bDv24R3Gav5+1dg+h+/8e5m390Kp3BheWxvYWTFA0l7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxOGM2YmM0OWVlNThmZGZmNDU5OWI4N2NmZDQ3NDhhZjljNDdiYTA4OGE1N2YxNDNjNGY3ZGYwYjBiZWZiMDU4YTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMWEzZDRmMmZiM2QyMzIwZmYxMWU1YWQ2ZjViMGVmZGI4NDc3MTlhYmY5ZmI1NzYwZmExZmJmZjFlZTY2ZGZkZDBhIiwidWlkIjoiZmJmM2E1Y2IwMTlmYzg2YmVmNmJlNjQ3YTNmMzZlMTkiLCJ1c2VybmFtZSI6ImNvbG9iYXMifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MDI4ODgzMTYsImhhc2giOiIxZDBhYjBhOTlhNzJiYTMxY2QwZTkwNWI3YTk1ODQ1M2I0ZTEzZDAwMTc5Y2U4MDVhZmU0NjNhMzcxNzMyNDdkYmRlNjk2ZGU3Y2ZhZGE5NGNhYTYzNmI2OTNmNjI3ZWVhYTA2YzhhYzQ2MTk4M2I1Zjc3ODIyYzZkODUxOTcwNiIsImhhc2hfbWV0YSI6ImIxYzNmYjc1ZjYxMzI5ZDQ2ZmJmOTQ4ZmJhMDQzMzM3ZjQwMTgzNjYwNGU2ZGQyZWFjNWMxMTQ2ZjFkMzMxMjMiLCJzZXFubyI6MTMyOTM2MH0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJjb2xvYmFzLmdpdGh1Yi5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjI4In0sImN0aW1lIjoxNTAyODg4MjI0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImI4Y2QwNmNmNzJhMDlmNjY3YWU4ZGZmMzhlMmYxMzdkYWZjYTBjYTBhZThhYWUwYzg1Yjc5NDJlOTlmNzgzMmIiLCJzZXFubyI6MjMsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAaXe3Dvocd5fj5gmO3DQosjugB2/qikddB+aJnC9GWQKXBpQ3Dg1sYHOnPvoYbT416F3HzG0AW2lwRbk/XcyuDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIC8qAXQ7gr2McZzr2eVmrrSBiZfb0+U9046p8uo1paYzo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/colobas
+
