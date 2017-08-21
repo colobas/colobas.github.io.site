@@ -9,4 +9,4 @@ good company!
 
 I'm currently with [jungle.ai](http://jungle.ai).
 
-Ping me at [gpires@tutanota.com](mailto:gpires@tutanota.com)
+Ping me at [mail@gpir.es](mailto:mail@gpir.es)
