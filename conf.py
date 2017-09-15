@@ -68,7 +68,8 @@ TRANSLATIONS = {
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/pages/about/", "About"),
-        ("/pages/cv/", "Curriculum Vitae"),
+        ("/cv.html", "Curriculum Vitae"),
+        ("/cv.pdf", "Curriculum Vitae (PDF)"),
     ),
 }
 
