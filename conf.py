@@ -25,8 +25,8 @@ SITE_URL = "https://colobas.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://colobas.github.io/"
-BLOG_EMAIL = "gpires@tutanota.com"
-BLOG_DESCRIPTION = "Data Scientist / Developer / Wannabe World-Changer"  # (translatable)
+BLOG_EMAIL = "mail@gpir.es"
+BLOG_DESCRIPTION = "ML+Data Engineer / Developer / Wannabe World-Changer"  # (translatable)
 
 DEFAULT_LANG = "en"
 
