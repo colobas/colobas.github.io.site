@@ -26,7 +26,7 @@ SITE_URL = "https://colobas.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://colobas.github.io/"
 BLOG_EMAIL = "mail@gpir.es"
-BLOG_DESCRIPTION = "ML+Data Engineer / Developer / Wannabe World-Changer"  # (translatable)
+BLOG_DESCRIPTION = "ML+Data Engineer / Wannabe World-Changer"  # (translatable)
 
 DEFAULT_LANG = "en"
 
