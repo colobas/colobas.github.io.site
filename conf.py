@@ -1238,7 +1238,7 @@ UNSLUGIFY_TITLES = True
 # If webassets is installed, bundle JS and CSS into single files to make
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
@@ -1300,7 +1300,6 @@ GLOBAL_CONTEXT = {
 	'GITHUB_URL': 'https://github.com/colobas',
 	'BANNER_URL': '/assets/img/silk-road.jpg',
 	'LINKEDIN_URL': 'https://www.linkedin.com/in/guilherme-pires-92717913b/',
-	'MEDIUM_URL': 'https://medium.com/@colobas'
 }
 
 # Add functions here and they will be called with template

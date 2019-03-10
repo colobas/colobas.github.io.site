@@ -531,6 +531,10 @@ body.nav-opened .site-wrapper {
     font-family: 'Open Sans', sans-serif;
 }
 
+.main-header-content a {
+    text-decoration: none !important;
+}
+
 /* Navigation */
 body.nav-opened .nav-cover {
     position: fixed;
@@ -663,12 +667,14 @@ body.nav-opened .nav {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+/*
 .nav li a:after {
     display: inline-block;
     content: " .......................................................";
     color: rgba(255,255,255,0.2);
     margin-left: 5px;
 }
+*/
 .nav .nav-current:before {
     color: #fff;
 }
@@ -938,6 +944,19 @@ body.nav-opened .menu-button .word {
     animation-delay: 0.1s;
 }
 
+.blogsectiontitle{
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    margin: 4rem auto;
+    padding-bottom: 0rem !important;
+    word-wrap: break-word;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post{
     position: relative;
@@ -959,7 +978,6 @@ article {
     max-width: 710px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -967,23 +985,6 @@ article {
     hyphens: auto;
 }
 
-
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
-}
 
 body:not(.post-template) .post-title {
     font-size: 3.6rem;
@@ -1126,6 +1127,11 @@ body:not(.post-template) .post-title {
 
 /* Keep images centered, and allow images wider than the main
    text column to break out. */
+
+.post-content {
+    margin-top: 1.5em;
+}
+
 .post-content img {
     display: block;
     max-width: 126%;
