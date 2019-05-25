@@ -985,7 +985,21 @@ PRETTY_URLS = True
 # SCHEDULE_ALL = False
 
 # Do you want a add a Mathjax config file?
-# MATHJAX_CONFIG = ""
+MATHJAX_CONFIG = """
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+"""
 
 # If you want support for the $.$ syntax (which may conflict with running
 # text!), just use this config:
