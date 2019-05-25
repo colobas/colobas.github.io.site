@@ -11,7 +11,4 @@ training a machine learning model, reading a book, cooking, running, travelling,
 playing some instrument, or spending time with my friends and family, I'm
 either sleeping or trying to.
 
-I'm currently on leave from [jungle.ai](http://jungle.ai), to finish my MSc
-thesis.
-
 Ping me at [mail@gpir.es](mailto:mail@gpir.es)
