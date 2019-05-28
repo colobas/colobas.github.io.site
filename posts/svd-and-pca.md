@@ -1,5 +1,5 @@
 ---
-title: "Singular Value Decomposition"
+title: "SVD and PCA"
 date: 2019-05-27 19:00
 has_math: true
 ---
@@ -9,9 +9,9 @@ has_math: true
 - Take any matrix $A$. Generally speaking, what it does to a vector $\vec{x}$ 
 is stretch it and rotate it.
 
-- Now let's consider that a matrix A does to a unitary circle:
+- Now let's consider what a matrix $A$ does to a unitary circle:
 
-![matrix multiplication](images/matrix-multiplication.png){ width=80% }
+![](/images/matrix-multiplication.png){ width=80% }
 
 - The orthonormal vectors $\vec{v_1}$ and $\vec{v_2}$ were rotated into
 the orthonormal vectors $\vec{u_1}$ and $\vec{u_2}$ and scaled by some
@@ -107,7 +107,7 @@ Since $\hat{U}$ is underdetermined, normally we work with:
 & & & & \\
 \end{array}
 \right]
-}_{U\to (m\times m)}
+}_{\stackrel{\mathbf U}{(m\times m)}}
 \
 \underbrace{\begin{bmatrix}
 \ & & \\
@@ -116,7 +116,7 @@ Since $\hat{U}$ is underdetermined, normally we work with:
 \hline
 \ 0 & ...  & 0 \\
 \ 0 & ... & 0 \\
-\end{bmatrix}}_{\Sigma\to (m\times n)}
+\end{bmatrix}}_{\stackrel{\mathbf\Sigma}{(m\times n)}}
 \
 \underbrace{\begin{bmatrix}
 & & \\
@@ -124,7 +124,6 @@ Since $\hat{U}$ is underdetermined, normally we work with:
 & & \\
 \end{bmatrix}}_{(n\times n)}
 \end{align*}
-
 
 ___
 
@@ -157,8 +156,23 @@ space is:
 &= \frac{1}{n-1} \Lambda
 \end{align*}
 
-And we now $\Lambda$ is diagonal, so we successfully found a coordinate
+And we know $\Lambda$ is diagonal, so we successfully found a coordinate
 transform where off-diagonal values of the covariance matrix are 0, hence
-minimizing redundancy. Remember, to obtain $Y$, we hit $X$ with $S^T$
+minimizing redundancy.
 
+Remember: to obtain $Y$, we hit $X$ with $S^T$. What's the interpretation of
+this?
+
+- If $Y = S^T X$, then $X = SY$, 
+- which means that to "translate" from $Y$ to $X$ we use $S$ as our
+change-of-basis matrix.
+- Conversely, doing $Y = S^T X$,
+translates $X$ into the column-space of $S$. 
+- And the columns of $S$ are the eigenvectors of $XX^T$!
+
+So, in summary, the coordinate system in which redundancy is minimized is 
+precisely the one given by the eigenvectors of $XX^T$!
+
+(Speaking of redundancy, this last chunk is a good example of that, but
+writing it down like that does help consolidate things)
 
