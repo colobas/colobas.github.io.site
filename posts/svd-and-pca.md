@@ -4,6 +4,13 @@ date: 2019-05-27 19:00
 has_math: true
 ---
 
+This is a two-part post, with some notes I wrote while refreshing the concepts
+of SVD and PCA.
+
+- [Part 1 - SVD](#singular-value-decomposition)
+- [Part 2 - PCA](#pca)
+
+
 # Singular Value Decomposition
 
 - Take any matrix $A$. Generally speaking, what it does to a vector $\vec{x}$ 
@@ -125,6 +132,13 @@ Since $\hat{U}$ is underdetermined, normally we work with:
 \end{bmatrix}}_{(n\times n)}
 \end{align*}
 
+I.e., $U$ is obtained by adding $(m-n)$ orthonormal columns to $\hat U$, and
+$\Sigma$ is obtained by adding $(m-n)$ rows of zeros to $\hat\Sigma$
+
+Computing the SVD, boils down to finding the eigendecompositions of $AA^T$ and
+$A^T A$. The eigenvectors of $AA^T$ are $U$, and the eigenvectors of $A^T A$ are
+$V$. The eigenvalues of both $AA^T$ and $A^T A$ are the squares of the singular
+values!
 ___
 
 # PCA
@@ -133,7 +147,18 @@ Let $X$ be a (centered) $m \times n$ data matrix. Then $\frac{1}{n-1}XX^T$ is
 the corresponding covariance matrix.
 
 If there are non-zero off-diagonal values in the covariance matrix, that means
-that the coordinates we picked have some redundancy.
+that the coordinates we picked have some redundancy. Let this notion sink in.
+There are many ways to think about this, but it all boils down to the fact that,
+if there are non-zero off-diagonal values in the cov. matrix, then the
+coordinates we're using are not orthogonal.
+
+Why does this matter? Because if we have orthogonal coordinates, we know that
+these are the directions of greates variation (hence "Principal Components"),
+and in a lucky scenario, we might even find that we need less dimensions to
+represent the data at hand. (For an excelent example of this, and a lecture
+much better than my notes, check 
+[this video](https://www.youtube.com/watch?v=a9jdQGybYmE) by Prof. J. Nathan
+Kutz)
 
 **PCA's goal**: Find a coordinate system where the covariance matrix is
 diagonal.
@@ -176,3 +201,39 @@ precisely the one given by the eigenvectors of $XX^T$!
 (Speaking of redundancy, this last chunk is a good example of that, but
 writing it down like that does help consolidate things)
 
+### Approach 2
+
+Same setting, but let's use the two following points:
+
+- $X = U\Sigma V^*$
+- $Y = U^* X$
+
+In this case, the covariance matrix in the $Y$ space is:
+
+\begin{align*}
+\frac{1}{n-1} YY^T &= \frac{1}{n-1} (U^* X)(U^* X)^T \\
+&= \frac{1}{n-1} (U^* X)(X^* U)\\
+&= \frac{1}{n-1} U^* (X)(X^*) U\\
+&= \frac{1}{n-1} U^* (U\Sigma V^*)(V \Sigma^T U^*) U \\
+&= \frac{1}{n-1} (U^*U) \Sigma (V^*V) \Sigma^T (U^* U) \\
+&= \frac{1}{n-1} \Sigma\Sigma^T
+\end{align*}
+
+Where I've repeated some of the steps with the parenthesis in different
+locations, to make things clearer. 
+
+You can easily see that $\Sigma * \Sigma^T$ is diagonal (its last $(m-n)$
+diagonal elements are going to be zero).
+
+Again, what's the meaning of this? Following the same rationale, we're saying
+that $U^*$ is a change-of-basis matrix that takes us to a space where the
+covariance matrix is diagonal. If you paid attention, you'll notice that the
+columns of $U$ are precisely the eigenvectors of $XX^T$ - the coordinate system
+we arrived at, in the previous section. So there's the connection between the
+two approaches. (You could have guessed it by the fact that we normally think
+of computing the eigendecomposition of $XX^T$ and $X^T X$).
+
+**TL;DR**: Given a data matrix $X$, the principal directions of variation in that
+data are given by the eigenvectors of its covariance matrix, and the magnitude
+of variation in each of those directions is given by the eigenvalues of the
+covariance matrix.
