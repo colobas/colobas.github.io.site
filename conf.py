@@ -196,7 +196,7 @@ FILES_FOLDERS = {'files': ''}
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
     "rest": ('.rst', '.txt'),
-    "markdown": ('.md', '.mdown', '.markdown'),
+    #"markdown": ('.md', '.mdown', '.markdown'),
     "textile": ('.textile',),
     "txt2tags": ('.t2t',),
     "bbcode": ('.bb',),
@@ -210,7 +210,7 @@ COMPILERS = {
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
-    # "pandoc": ('.rst', '.md', '.txt'),
+    "pandoc": ('.rst', '.md', '.txt'),
 }
 
 # Create by default posts in one file format?
@@ -255,7 +255,7 @@ WRITE_TAG_CLOUD = True
 
 # Generate pages for each section. The site must have at least two sections
 # for this option to take effect. It wouldn't build for just one section.
-POSTS_SECTIONS = True
+POSTS_SECTIONS = False
 
 # Setting this to False generates a list page instead of an index. Indexes
 # are the default and will apply GENERATE_ATOM if set.
@@ -993,7 +993,7 @@ MathJax.Hub.Config({
         displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
         processEscapes: true
     },
-    displayAlign: 'left', // Change this to 'center' to center equations.
+    displayAlign: 'center', // Change this to 'center' to center equations.
     "HTML-CSS": {
         styles: {'.MathJax_Display': {"margin": 0}}
     }
@@ -1056,7 +1056,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code',
 # ['-F', 'pandoc-citeproc', '--bibliography=/Users/foo/references.bib']
 # Pandoc does not demote headers by default.  To enable this, you can use, for example
 # ['--base-header-level=2']
-# PANDOC_OPTIONS = []
+PANDOC_OPTIONS = ["--mathjax"]
 
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty (which is
