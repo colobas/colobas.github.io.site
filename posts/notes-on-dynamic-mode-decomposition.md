@@ -115,7 +115,7 @@ Taking this, we do:
     - $\Phi = X'V\Sigma^{-1} W$
 
 - This allows us to rewrite our dynamical system as:
-    - $ \vec{x_t} = \sum_{k=1}^r \vec{\phi_k} e^{\omega_k t} b_k$
+    - $\vec{x_t} = \sum_{k=1}^r \vec{\phi_k} e^{\omega_k t} b_k$
     - This formulation allows us to think of the dynamical system in terms of the DMD modes (the $\phi_k$) which I like to regard as "eigenslices", and their respective oscillatory profiles (the $e^{\omega_k t}$ terms), which explain the time dynamics of each DMD mode.
     - Important remark: in a true linear dynamical system, the $\omega_k$ would have no real part, just imaginary, i.e. they would be pure oscillators. However, since in general we're approximating a non-linear system with a linear one, the $\omega_k$ we obtain almost always have a real part, although a really small one, depending on the data. This means that we can't use DMD to describe the system in the long-term, since the real part of the $\omega_k$ will cause the approximated system to either dampen out (if the real part is negative) or blow up (if the real part is positive).
 
