@@ -17,5 +17,5 @@ This in turn allows us to write down our system as a combination of
 eigenfunctions and DMD modes:
 
 \begin{align*}
-x(t) = \sum_{k=1}^{\infty}
+x_t = \sum_{k=1}^{\infty} \phi_k e^{\omega_k t} b_k
 \end{align*}
