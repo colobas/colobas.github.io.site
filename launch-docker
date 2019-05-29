@@ -2,7 +2,7 @@
 
 if [ "$#" -ne 2 ]; then
     PKG_FOLDER=$(pwd)
-    TENSORBOARD_LOGS_FOLDER="$(pwd)/sandbox/tensorboard_logs"
+    TENSORBOARD_LOGS_FOLDER="$(pwd)/sandbox/tensorboard_runs"
 else
     PKG_FOLDER=$1
     TENSORBOARD_LOGS_FOLDER=$2
