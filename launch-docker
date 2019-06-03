@@ -8,7 +8,8 @@ else
     TENSORBOARD_LOGS_FOLDER=$2
 fi
 
-optirun -b primus sudo nvidia-docker run -it --rm \
+#optirun -b primus sudo nvidia-docker run -it --rm \
+sudo nvidia-docker run -it --rm \
     -v $PKG_FOLDER/sandbox:/workspace/sandbox \
     -v $TENSORBOARD_LOGS_FOLDER:/workspace/runs\
     -v /tmp/.X11-unix:/tmp/.X11-unix \
