@@ -1130,6 +1130,7 @@ body:not(.post-template) .post-title {
 
 .post-content {
     margin-top: 1.5em;
+    text-align: justify;
 }
 
 .post-content img {
