@@ -10,7 +10,7 @@ fact I enjoy physically writing more than I do typing and writing LaTeX. So
 this time I decided to scan the notes I took while going through [this awesome
 write-up on how UMAP works](https://umap-learn.readthedocs.io/en/latest/how_umap_works.html).
 
-Please bear gn mind I'm not rigorous at all with this, as the goal was more to
+Please bear in mind I'm wasn't rigorous at all with this, as the goal was more to
 gain intuition than to give a formal account of this. Please do read the link
 I pointed to above, it's a really good read.
 
