@@ -23,28 +23,28 @@ Here it's easy to see that there's a point from which on increasing complexity
 translates to degrading test performance. In the classical scenario, model
 complexity is tuned to be close to the minimum of this U-shaped curve: the
 sweet-spot between having enough expressiveness to fit closely enough to the
-training data, and not being too expressiveness so as to not simply memorize
+training data, and not being too expressive so as to not simply memorize
 the training data (what's commonly called **overfitting**).
 
 However, in the era of Deep Learning, the case is, more often than not, that we
-have extremely complex models - where the number of parameters much larger
+have extremely complex models - where the number of parameters is much larger
 than the number of training samples - which are almost perfectly fitted to
 training data, reaching very low training error, and are still able to generalize.
 This contradicts the classical view, and still requires a complete theoretical
 explanation. Prof. Belkin's work is a very interesting step in the direction
 of that explanation.
 
-The paper's central idea is that there is another regime classically not considered,
+The paper's central idea is that there is another regime, classically not considered,
 after the interpolation threshold of model complexity (for many models this
 just means having at least as many parameters as data points). From this point
-on, models are able to perfectly fit the training data, but their test performance
+on, models are able to perfectly fit the training data, but their test risk
 starts decreasing again, which creates what the paper describes as a "double
 descent curve":
 ![](/images/double-descent-curve.png){ max-width=80% }
 
-But why would this happen? The first thing to notice is that after the
-interpolation threshold the training error basically drops to zero, regardless
-of the number of parameters, so clearly Empirical Risk Minimization stops being
+But why would this happen? The first thing to notice is that, after the
+interpolation threshold, the training error basically drops to zero, regardless
+of the number of parameters: so clearly Empirical Risk Minimization stops being
 a proxy for the true performance. According to the paper, the answer lies in
 the appropriate definition of the inductive bias associated with each problem.
 They suggest that a function-space norm (i.e., a norm defined over a space of
